@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Article de Blog — Akieni Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="#article">Article</a></li>
+      <li><a href="#tableau">Tableau</a></li>
+      <li><a href="#commentaires">Commentaires</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ARTICLE -->
+    <article id="article">
+      <header>
+        <h1>10 astuces de développement web</h1>
+        <p><strong>Auteur :</strong> Lauclass Ekumu</p>
+        <p><time datetime="2026-07-04">4 juillet 2026</time> | Catégorie : Développement</p>
+      </header>
+
+      <p>Le développement web est un domaine en constante évolution. Voici dix astuces pratiques pour améliorer vos projets et progresser rapidement.</p>
+
+      <blockquote>
+        « Le code propre est celui que l’on peut lire et comprendre facilement. »
+      </blockquote>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&fit=crop" alt="Développeur devant son écran">
+        <figcaption>Un développeur travaillant sur une interface moderne.</figcaption>
+      </figure>
+
+      <h2>Astuce 1 : Utiliser des balises sémantiques</h2>
+      <p>Les balises HTML5 comme <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> améliorent la lisibilité et l’accessibilité.</p>
+
+      <h2>Astuce 2 : Bien structurer son CSS</h2>
+      <p>Organisez vos règles CSS avec des commentaires et utilisez des variables pour plus de cohérence.</p>
+
+      <!-- TABLEAU -->
+      <section id="tableau">
+        <h2>Comparaison des frameworks CSS</h2>
+        <table>
+          <thead>
+            <tr><th>Framework</th><th>Popularité</th><th>Utilisation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Bootstrap</td><td>★★★★★</td><td>Rapide, composants prêts</td></tr>
+            <tr><td>Tailwind</td><td>★★★★☆</td><td>Utility-first, flexible</td></tr>
+            <tr><td>Bulma</td><td>★★★☆☆</td><td>Simplicité et légèreté</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside>
+      <h2>Articles récents</h2>
+      <ul>
+        <li><a href="#">Pourquoi apprendre à coder</a></li>
+        <li><a href="#">Mon parcours tech personnel</a></li>
+        <li><a href="#">Les erreurs à éviter en CSS</a></li>
+      </ul>
+    </aside>
+
+    <!-- COMMENTAIRES -->
+    <section id="commentaires">
+      <h2>Commentaires</h2>
+      <form>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="comment">Commentaire</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>&copy; 2026 Akieni Academy — Cohorte 2</p>
+    <p>Contact : <a href="mailto:contact@akieniacademy.com">contact@akieniacademy.com</a></p>
+  </footer>
+</body>
+</html>

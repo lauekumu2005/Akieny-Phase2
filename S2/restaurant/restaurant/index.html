@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menu interactif du Restaurant Saveurs du Congo - Plats authentiques congolais">
+    <title>Saveurs du Congo - Menu Interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Sauter au contenu principal</a>
+
+    <!-- Navigation principale -->
+    <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <div class="logo-section">
+                <h1 class="restaurant-name">🍽️ Saveurs du Congo</h1>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li><a href="#accueil" class="nav-link" role="menuitem">Accueil</a></li>
+                <li><a href="#menu" class="nav-link" role="menuitem">Menu</a></li>
+                <li><a href="#special" class="nav-link" role="menuitem">Spécial du Jour</a></li>
+                <li><a href="#horaires" class="nav-link" role="menuitem">Horaires</a></li>
+                <li><a href="#reservation" class="nav-link" role="menuitem">Réservation</a></li>
+                <li><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Section Accueil -->
+        <section id="accueil" class="hero-section">
+            <div class="hero-content">
+                <h2>Bienvenue à Saveurs du Congo</h2>
+                <p class="hero-subtitle">Découvrez les saveurs authentiques de la cuisine congolaise</p>
+            </div>
+        </section>
+
+        <!-- Section Spécial du Jour -->
+        <section id="special" class="special-section" aria-labelledby="special-title">
+            <div class="container">
+                <h2 id="special-title">🌟 Spécial du Jour</h2>
+                <article class="special-dish">
+                    <div class="special-image">
+                        <img src="images/poulet_moambe.jpg" alt="Poulet à la Moambe - Plat spécial du jour" loading="lazy">
+                    </div>
+                    <div class="special-info">
+                        <h3>Poulet à la Moambe</h3>
+                        <p class="special-description">Poulet tendre cuit dans une sauce riche à base de pâte d'arachide et de tomates, agrémenté de légumes frais et d'épices traditionnelles. Un véritable classique congolais.</p>
+                        <span class="special-price" aria-label="Prix du plat spécial">1500fc</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section Menu Principal -->
+        <section id="menu" class="menu-section" aria-labelledby="menu-title">
+            <div class="container">
+                <h2 id="menu-title">Menu Principal</h2>
+
+                    <!-- ENTRÉES -->
+                <section id="entrees-panel" class="menu-panel" role="region">
+                    <h3 id="entrees-title" class="category-title">Les Entrées</h3>
+                    <div class="dishes-grid">
+
+                        <article class="dish-card">
+                            <figure>
+                                <img src="images/makemba.jfif" alt="Bananes plantain frites - Entrée" loading="lazy">
+                                <figcaption class="sr-only">Image du plat</figcaption>
+                            </figure>
+                            <div class="dish-content">
+                                <h4>Bananes Plantain Frites</h4>
+                                <p class="dish-description">Tranches de bananes plantain dorées et croustillantes. Accompagnées de sauce piment-tomate maison.</p>
+                                <ul class="ingredients" aria-label="Ingrédients">
+                                    <li>Bananes plantain</li>
+                                    <li>Huile de friture</li>
+                                    <li>Sauce piment</li>
+                                </ul>
+                                <span class="price">3500fc</span>
+                            </div>
+                        </article>
+
+                        <article class="dish-card">
+                            <figure>
+                                <img src="images/beignet_mais.jfif" alt="Beignets de maïs - Entrée" loading="lazy">
+                                <figcaption class="sr-only">Image du plat</figcaption>
+                            </figure>
+                            <div class="dish-content">
+                                <h4>Beignets de Maïs Frais</h4>
+                                <p class="dish-description">Beignets légers à base de maïs frais, oignons verts et épices. Un incontournable de la cuisine de rue congolaise.</p>
+                                <ul class="ingredients" aria-label="Ingrédients">
+                                    <li>Maïs frais</li>
+                                    <li>Farine</li>
+                                    <li>Oignons verts</li>
+                                </ul>
+                                <span class="price">300fc</span>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- PLATS PRINCIPAUX -->
+                <section id="plats-panel" class="menu-panel" role="region">
+                    <h3 id="plats-title" class="category-title">Les Plats Principaux</h3>
+                    <div class="dishes-grid">
+                        <article class="dish-card">
+                            <figure>
+                                <img src="images/poulet_moambe.jpg" alt="Poulet à la Moambe - Plat principal" loading="lazy">
+                                <figcaption class="sr-only">Image du plat</figcaption>
+                            </figure>
+                            <div class="dish-content">
+                                <h4>Poulet à la Moambe</h4>
+                                <p class="dish-description">Poulet tendre cuit dans une sauce riche à base de pâte d'arachide, tomates et épices. Servi avec riz blanc.</p>
+                                <ul class="ingredients" aria-label="Ingrédients">
+                                    <li>Poulet fermier</li>
+                                    <li>Pâte d'arachide</li>
+                                    <li>Tomates</li>
+                                    <li>Riz blanc</li>
+                                </ul>
+                                <span class="price">12500fc</span>
+                            </div>
+                        </article>
+
+                        <article class="dish-card">
+                            <figure>
+                                <img src="images/liboke poisson.jfif" alt="Liboke de Poisson - Plat principal" loading="lazy">
+                                <figcaption class="sr-only">Image du plat</figcaption>
+                            </figure>
+                            <div class="dish-content">
+                                <h4>Liboke de Poisson</h4>
+                                <p class="dish-description">Poisson blanc enveloppé dans des feuilles de bananier avec tomates, oignons et épices, cuit à la vapeur.</p>
+                                <ul class="ingredients" aria-label="Ingrédients">
+                                    <li>Poisson frais</li>
+                                    <li>Feuilles de bananier</li>
+                                    <li>Tomates</li>
+                                    <li>Épices congolaises</li>
+                                </ul>
+                                <span class="price">5000fc</span>
+                            </div>
+                        </article>
+
+
+                        <article class="dish-card">
+                            <figure>
+                                <img src="images/pondu.jfif" alt="Pondu - Plat principal" loading="lazy">
+                                <figcaption class="sr-only">Image du plat</figcaption>
+                            </figure>
+                            <div class="dish-content">
+                                <h4>Pondu (Feuilles de Manioc)</h4>
+                                <p class="dish-description">Feuilles de manioc finement déchiquetées cuites avec oignons, tomates et huile de palme. Accompagné de riz.</p>
+                                <ul class="ingredients" aria-label="Ingrédients">
+                                    <li>Feuilles de manioc</li>
+                                    <li>Huile de palme</li>
+                                    <li>Oignons</li>
+                                    <li>Riz blanc</li>
+                                </ul>
+                                <span class="price">2500fc</span>
+                            </div>
+                        </article>
+                    </section>
+                        
+
+                <!-- BOISSONS -->
+                <section id="boissons-panel" class="menu-panel" role="region">
+                    <h3 id="boissons-title" class="category-title">Les Boissons</h3>
+                    <div class="dishes-grid">
+                        <article class="dish-card beverage-card">
+                            <h4>Jus de Gingembre Frais</h4>
+                            <p class="dish-description">Jus énergisant à base de gingembre frais, citron et miel. Parfait pour la digestion.</p>
+                            <span class="price">3000fc</span>
+                        </article>
+
+                        <article class="dish-card beverage-card">
+                            <h4>Jus de Grenadine Maison</h4>
+                            <p class="dish-description">Jus sucré préparé avec des grenades fraîches. Servi frais avec glaçons.</p>
+                            <span class="price">3000fc</span>
+                        </article>
+
+                        <article class="dish-card beverage-card">
+                            <h4>Smoothie aux Fruits Rouges</h4>
+                            <p class="dish-description">Mélange de fruits rouges tropicaux, yaourt et un trait de miel. Onctueux et rafraîchissant.</p>
+                            <span class="price">4500fc</span>
+                        </article>
+
+                        <article class="dish-card beverage-card">
+                            <h4>Café Congolais</h4>
+                            <p class="dish-description">Café arabica de haute altitude torréfié localement. Riche et aromatique.</p>
+                            <span class="price">2500fc</span>
+                        </article>
+
+                        <article class="dish-card beverage-card">
+                            <h4>Tisane aux Herbes</h4>
+                            <p class="dish-description">Infusion traditionnelle d'herbes africaines. Apaisante et digestive.</p>
+                            <span class="price">3000fc</span>
+                        </article>
+
+                        <article class="dish-card beverage-card">
+                            <h4>Eau de Coco Fraîche</h4>
+                            <p class="dish-description">Eau de noix de coco naturelle. Hydratante et légèrement sucrée.</p>
+                            <span class="price">3500fc</span>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Tableau des Prix par Catégorie -->
+        <section class="pricing-section" aria-labelledby="pricing-title">
+            <div class="container">
+                <h2 id="pricing-title">Résumé des Prix par Catégorie</h2>
+                <table class="pricing-table" role="table" aria-label="Tableau des prix par catégorie">
+                    <thead>
+                        <tr>
+                            <th scope="col">Catégorie</th>
+                            <th scope="col">Prix Minimum</th>
+                            <th scope="col">Prix Maximum</th>
+                            <th scope="col">Nombre de Plats</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Entrées</td>
+                            <td>3500fc</td>
+                            <td>5000fc</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Plats Principaux</td>
+                            <td>8500fc</td>
+                            <td>12500fc</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Boissons</td>
+                            <td>2500fc</td>
+                            <td>4000fc</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section Horaires -->
+        <section id="horaires" class="opening-hours-section" aria-labelledby="hours-title">
+            <div class="container">
+                <h2 id="hours-title">Horaires d'Ouverture</h2>
+                <div class="hours-wrapper">
+                    <table class="hours-table" role="table" aria-label="Horaires d'ouverture">
+                        <thead>
+                            <tr>
+                                <th scope="col">Jour</th>
+                                <th scope="col">Déjeuner</th>
+                                <th scope="col">Dîner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Lundi</strong></td>
+                                <td>12h00 - 15h00</td>
+                                <td>19h00 - 23h00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mardi</strong></td>
+                                <td>12h00 - 15h00</td>
+                                <td>19h00 - 23h00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mercredi</strong></td>
+                                <td>12h00 - 15h00</td>
+                                <td>19h00 - 23h00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Jeudi</strong></td>
+                                <td>12h00 - 15h00</td>
+                                <td>19h00 - 23h00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vendredi</strong></td>
+                                <td>12h00 - 15h00</td>
+                                <td>19h00 - 00h00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Samedi</strong></td>
+                                <td>11h30 - 15h30</td>
+                                <td>18h00 - 00h00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dimanche</strong></td>
+                                <td>11h30 - 15h30</td>
+                                <td>18h00 - 23h00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Réservation -->
+        <section id="reservation" class="reservation-section" aria-labelledby="reservation-title">
+            <div class="container">
+                <h2 id="reservation-title">Réservez Votre Table</h2>
+                <form class="reservation-form" method="post" action="#" aria-label="Formulaire de réservation">
+                    <fieldset>
+                        <legend>Vos Informations</legend>
+                        
+                        <div class="form-group">
+                            <label for="client-name">Nom <span class="required">*</span></label>
+                            <input 
+                                type="text" 
+                                id="client-name" 
+                                name="name" 
+                                required 
+                                aria-required="true"
+                                placeholder="Votre nom complet"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client-email">Email <span class="required">*</span></label>
+                            <input 
+                                type="email" 
+                                id="client-email" 
+                                name="email" 
+                                required 
+                                aria-required="true"
+                                placeholder="votre.email@exemple.com"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client-phone">Téléphone <span class="required">*</span></label>
+                            <input 
+                                type="tel" 
+                                id="client-phone" 
+                                name="phone" 
+                                required 
+                                aria-required="true"
+                                placeholder="06 12 34 56 78"
+                            >
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reservation-date">Date <span class="required">*</span></label>
+                                <input 
+                                    type="date" 
+                                    id="reservation-date" 
+                                    name="date" 
+                                    required 
+                                    aria-required="true"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reservation-time">Heure <span class="required">*</span></label>
+                                <input 
+                                    type="time" 
+                                    id="reservation-time" 
+                                    name="time" 
+                                    required 
+                                    aria-required="true"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guest-count">Nombre de Personnes <span class="required">*</span></label>
+                            <select id="guest-count" name="guests" required aria-required="true">
+                                <option value="">-- Sélectionnez --</option>
+                                <option value="1">1 personne</option>
+                                <option value="2">2 personnes</option>
+                                <option value="3">3 personnes</option>
+                                <option value="4">4 personnes</option>
+                                <option value="5">5 personnes</option>
+                                <option value="6">6 personnes</option>
+                                <option value="7">7 personnes</option>
+                                <option value="8">8 personnes ou plus</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="special-requests">Demandes Spéciales</label>
+                            <textarea 
+                                id="special-requests" 
+                                name="requests" 
+                                rows="4"
+                                placeholder="Régimes alimentaires, allergies, occasions spéciales..."
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input 
+                                type="checkbox" 
+                                id="accept-terms" 
+                                name="accept" 
+                                required
+                                aria-required="true"
+                            >
+                            <label for="accept-terms">J'accepte les conditions de réservation <span class="required">*</span></label>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="submit-button">Réserver Maintenant</button>
+                    <button type="reset" class="reset-button">Effacer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer-section" role="contentinfo" aria-label="Pied de page et contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section-col">
+                    <h3>Saveurs du Congo</h3>
+                    <p>Découvrez l'authenticité de la cuisine congolaise</p>
+                </div>
+
+                <div class="footer-section-col">
+                    <h4>Adresse</h4>
+                    <address>
+                        42 Boulevard Lumumba<br>
+                        Kinshasa<br>
+                        RDC
+                    </address>
+                </div>
+
+                <div class="footer-section-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info" role="list">
+                        <li><strong>Téléphone:</strong> <a href="tel:+243823456789">+243 823 45 67 89</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:contact@saveursdukongo.com">contact@saveursdukongo.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section-col">
+                    <h4>Réseaux Sociaux</h4>
+                    <ul class="social-links" role="list">
+                        <li><a href="#" aria-label="Notre page Facebook">Facebook</a></li>
+                        <li><a href="#" aria-label="Notre compte Instagram">Instagram</a></li>
+                        <li><a href="#" aria-label="Notre compte Twitter">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Saveurs du Congo. Tous droits réservés.</p>
+                <ul class="footer-links" role="list">
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

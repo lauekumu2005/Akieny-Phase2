@@ -1,0 +1,215 @@
+/* ==============================
+   VARIABLES & RESET
+============================== */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #1f2937;
+  --accent-color: #10b981;
+  --bg-light: #f9fafb;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==============================
+   GLOBAL
+============================== */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-light);
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+p {
+  color: #6b7280;
+}
+
+/* ==============================
+   HERO
+============================== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 60px;
+  background: linear-gradient(135deg, #f0f4ff, #f8faff);
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.hero img {
+  max-width: 500px;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+.btn {
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  background: #fff;
+  border: 2px solid var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* ==============================
+   FEATURES
+============================== */
+.features {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.feature {
+  background: #fff;
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+}
+
+.feature i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+/* ==============================
+   TESTIMONIALS
+============================== */
+.testimonials {
+  background: #fff;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+  font-style: italic;
+  position: relative;
+}
+
+.testimonial::before {
+  content: "“";
+  font-size: 3rem;
+  color: var(--primary-color);
+  position: absolute;
+  left: -20px;
+  top: -10px;
+}
+
+/* ==============================
+   PRICING
+============================== */
+.pricing {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.plan {
+  background: #fff;
+  padding: 30px;
+  border-radius: var(--radius);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(59,130,246,0.15);
+}
+
+.plan.highlight {
+  border: 2px solid var(--primary-color);
+}
+
+/* ==============================
+   CTA
+============================== */
+.cta {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+.footer {
+  background: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
